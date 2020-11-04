@@ -11,20 +11,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.iftm.course.services.UserService;
-import com.iftm.course.services.userService;
+import com.iftm.course.services.OrderService;
 
-import iftm.course.entities.user;
+import iftm.course.entities.Order;
 
 @RestController
-@RequestMapping(value = "/users")
-public class userResource {
+@RequestMapping(value = "/Orders")
+public class OrderResource {
 	
 	@Autowired
-	private userService service;
+	private OrderService service;
 	
 	@GetMapping
-	public ResponseEntity<List<user>> findAll(){		
-		List<user> list = service.findAll();
+	public ResponseEntity<List<Order>> findAll(){		
+		List<Order> list = service.findAll();
 		return ResponseEntity.ok().body(List);
 	}
 	
