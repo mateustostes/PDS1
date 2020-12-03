@@ -1,10 +1,9 @@
 package com.iftm.course.repositories;
 
-import org.springframework.stereotype.Repository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.iftm.course.entities.user;
+import com.iftm.course.entities.User;
 
-@Repository
-public class userRepository extends JpaRepository<user, Long> {
+public interface UserRepository extends JpaRepository<User, Long> {
 
 }

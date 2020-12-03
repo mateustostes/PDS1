@@ -1,12 +1,13 @@
 package com.iftm.course.services;
 
+import java.util.List;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
+import com.iftm.course.entities.Order;
 import com.iftm.course.repositories.OrderRepository;
-import com.iftm.course.repositories.Order;
 
 @Service
 public class OrderService {
@@ -18,8 +19,8 @@ public class OrderService {
 		return repository.findAll();
 	}
 	
-	public User findById(Long id) {
-		Optional<User> obj repository.findById(id);
+	public Order findById(Long id) {
+		Optional<Order> obj = repository.findById(id);
 		return obj.get();
 	}
 

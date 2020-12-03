@@ -10,10 +10,10 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.iftm</groupId>
-	<artifactId>PDS1</artifactId>
+	<artifactId>course</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>PDS1</name>
-	<description>Course Spring Boot</description>
+	<name>course</name>
+	<description>Couse Spring Boot</description>
 
 	<properties>
 		<java.version>11</java.version>
